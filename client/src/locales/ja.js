@@ -1,11 +1,14 @@
 export default {
   // Navigation
   nav: {
+    toggleSidebar: 'サイドバーを切り替え',
     overview: '概要',
     inventory: '在庫',
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '補充発注',
+    reports: 'レポート',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -106,6 +109,12 @@ export default {
     title: '注文',
     description: '顧客注文の表示と管理',
     allOrders: 'すべての注文',
+    submittedOrders: '発注済み注文',
+    submittedOrdersDescription: 'サプライヤーに発注した補充注文',
+    noSubmittedOrders: '発注済みの補充注文はまだありません。',
+    loadSubmittedError: '発注済み注文の読み込みに失敗しました',
+    leadTime: '納品リードタイム',
+    leadTimeDays: '{days}日',
     totalOrders: '総注文数',
     totalRevenue: '総収益',
     avgOrderValue: '平均注文額',
@@ -204,6 +213,7 @@ export default {
     shipped: '出荷済み',
     processing: '処理中',
     backordered: 'バックオーダー',
+    submitted: '発注済み',
     inStock: '在庫あり',
     lowStock: '在庫僅少',
     adequate: '適量'
@@ -309,6 +319,67 @@ export default {
     english: 'English',
     japanese: '日本語',
     selectLanguage: '言語を選択'
+  },
+
+  // 補充発注
+  restocking: {
+    title: '補充発注',
+    description: '予算を選択し、需要予測に基づく推奨購入品目を確認します',
+    budget: '予算',
+    maxBudget: '上限 {amount}',
+    recommendations: '推奨品目',
+    totalCost: '合計コスト',
+    remaining: '残額',
+    leadTime: 'リードタイム',
+    leadTimeDays: '{days}日',
+    sku: 'SKU',
+    name: '製品',
+    trend: 'トレンド',
+    forecastDemand: '予測需要',
+    onHand: '在庫数',
+    quantity: '発注数量',
+    unitCost: '単価',
+    lineTotal: '小計',
+    emptyState: '選択した予算では推奨品目を購入できません。予算を増やしてください。',
+    placeOrder: '発注する',
+    placingOrder: '発注中...',
+    orderSuccess: '注文 {orderNumber} を送信しました。納品予定日: {date}。',
+    viewOrders: '発注済み注文を表示',
+    orderError: '発注に失敗しました',
+    loadError: '推奨品目の読み込みに失敗しました'
+  },
+
+  // Reports
+  reports: {
+    title: 'パフォーマンスレポート',
+    description: '四半期ごとの業績指標と月次トレンドを表示します',
+    loadError: 'レポートの読み込みに失敗しました',
+    quarterly: {
+      title: '四半期パフォーマンス',
+      quarter: '四半期',
+      totalOrders: '注文総数',
+      totalRevenue: '総売上',
+      avgOrderValue: '平均注文額',
+      fulfillmentRate: '出荷完了率'
+    },
+    trend: {
+      title: '月次売上トレンド'
+    },
+    mom: {
+      title: '前月比分析',
+      month: '月',
+      orders: '注文数',
+      revenue: '売上',
+      change: '増減',
+      growthRate: '成長率',
+      notAvailable: '該当なし'
+    },
+    stats: {
+      totalRevenue: '総売上',
+      avgMonthlyRevenue: '月平均売上',
+      totalOrders: '注文総数',
+      bestQuarter: '最高業績の四半期'
+    }
   },
 
   // Common

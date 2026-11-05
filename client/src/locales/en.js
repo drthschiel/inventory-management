@@ -1,11 +1,14 @@
 export default {
   // Navigation
   nav: {
+    toggleSidebar: 'Toggle sidebar',
     overview: 'Overview',
     inventory: 'Inventory',
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
+    reports: 'Reports',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -106,6 +109,12 @@ export default {
     title: 'Orders',
     description: 'View and manage customer orders',
     allOrders: 'All Orders',
+    submittedOrders: 'Submitted Orders',
+    submittedOrdersDescription: 'Restocking orders placed with suppliers',
+    noSubmittedOrders: 'No restocking orders have been submitted yet.',
+    loadSubmittedError: 'Failed to load submitted orders',
+    leadTime: 'Delivery Lead Time',
+    leadTimeDays: '{days} days',
     totalOrders: 'Total Orders',
     totalRevenue: 'Total Revenue',
     avgOrderValue: 'Avg Order Value',
@@ -204,6 +213,7 @@ export default {
     shipped: 'Shipped',
     processing: 'Processing',
     backordered: 'Backordered',
+    submitted: 'Submitted',
     inStock: 'In Stock',
     lowStock: 'Low Stock',
     adequate: 'Adequate'
@@ -309,6 +319,67 @@ export default {
     english: 'English',
     japanese: 'Japanese',
     selectLanguage: 'Select Language'
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Choose a budget and review recommended purchases based on demand forecasts',
+    budget: 'Budget',
+    maxBudget: 'Max {amount}',
+    recommendations: 'Recommended Items',
+    totalCost: 'Total Cost',
+    remaining: 'Remaining',
+    leadTime: 'Lead Time',
+    leadTimeDays: '{days} days',
+    sku: 'SKU',
+    name: 'Product',
+    trend: 'Trend',
+    forecastDemand: 'Forecast Demand',
+    onHand: 'On Hand',
+    quantity: 'Qty to Order',
+    unitCost: 'Unit Cost',
+    lineTotal: 'Line Total',
+    emptyState: 'The selected budget is too low to fit any recommended items. Increase the budget to see recommendations.',
+    placeOrder: 'Place Order',
+    placingOrder: 'Placing Order...',
+    orderSuccess: 'Order {orderNumber} submitted. Expected delivery: {date}.',
+    viewOrders: 'View submitted orders',
+    orderError: 'Failed to place order',
+    loadError: 'Failed to load recommendations'
+  },
+
+  // Reports
+  reports: {
+    title: 'Performance Reports',
+    description: 'View quarterly performance metrics and monthly trends',
+    loadError: 'Failed to load reports',
+    quarterly: {
+      title: 'Quarterly Performance',
+      quarter: 'Quarter',
+      totalOrders: 'Total Orders',
+      totalRevenue: 'Total Revenue',
+      avgOrderValue: 'Avg Order Value',
+      fulfillmentRate: 'Fulfillment Rate'
+    },
+    trend: {
+      title: 'Monthly Revenue Trend'
+    },
+    mom: {
+      title: 'Month-over-Month Analysis',
+      month: 'Month',
+      orders: 'Orders',
+      revenue: 'Revenue',
+      change: 'Change',
+      growthRate: 'Growth Rate',
+      notAvailable: 'N/A'
+    },
+    stats: {
+      totalRevenue: 'Total Revenue',
+      avgMonthlyRevenue: 'Avg Monthly Revenue',
+      totalOrders: 'Total Orders',
+      bestQuarter: 'Best Performing Quarter'
+    }
   },
 
   // Common
