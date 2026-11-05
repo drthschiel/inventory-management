@@ -112,7 +112,7 @@ export default {
       { to: '/spending', label: t('nav.finance'), icon: 'M12 2v20M17 6H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6' },
       { to: '/demand', label: t('nav.demandForecast'), icon: 'M3 17l6-6 4 4 8-8M15 7h6v6' },
       { to: '/restocking', label: t('nav.restocking'), icon: 'M21 12a9 9 0 11-3-6.7M21 4v5h-5' },
-      { to: '/reports', label: 'Reports', icon: 'M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zM14 2v6h6M8 13h8M8 17h8M8 9h2' }
+      { to: '/reports', label: t('nav.reports'), icon: 'M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zM14 2v6h6M8 13h8M8 17h8M8 9h2' }
     ])
     const pageTitle = computed(() => {
       const match = navItems.value.find(n => n.to === route.path)
